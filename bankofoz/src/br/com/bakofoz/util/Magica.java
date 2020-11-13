@@ -1,4 +1,4 @@
-package br.com.ecommerce.util;
+package br.com.bakofoz.util;
 
 import javax.swing.JOptionPane;
 
