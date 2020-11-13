@@ -1,0 +1,29 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioEncadeada {
+
+	public static void main(String[] args) {
+		/*
+		 * Acrescente uma captura de dado, perguntando ao usuario
+		 * se é alfabetizado (1) ou não (0)
+		 * Se ele não for alfabetizado não vota
+		 * Altere o código abaixo para melhor estrutura de decisao		
+		 */
+		 
+		String nome = JOptionPane.showInputDialog("Eleitor").toUpperCase();
+		short escolaridade = Short.parseShort(JOptionPane.showInputDialog("digite 1 para alfabetizado e 0 para não alfabetizado"));		
+		if (escolaridade == 1) {	
+			System.out.println(nome + " você pode votar");	
+			
+		}else {
+			System.out.println(nome + " você não pode votar");
+		}
+
+		    		
+		
+
+	}
+
+}

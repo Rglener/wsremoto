@@ -1,0 +1,59 @@
+package br.com.liveup.modelo;
+
+public class Elevador {
+
+	//Sintaxe do método no Java
+	// <modificador> <Tipo do Retorno> <nome do método> (<Tipo do Param> <nome do Param>) {
+
+	private int andarAtual;
+	private int andarMaximo=23;
+	private int andarMinimo=1;
+	private int capacidadePessoas=8;
+	private int qtdePessoas;
+	private String nome;
+
+	// entrar
+	public void entrar(int parm){
+		if (capacidadePessoas <= parm)  {
+			qtdePessoas = parm;
+		}
+	}
+
+	// sair 
+	public void sair(int parm) {
+		if (qtdePessoas >= 0) {
+			qtdePessoas-=parm;		
+		}
+	}
+
+	// subir
+	public void subir() {
+		if ( andarAtual+1 <= andarMaximo) {
+			andarAtual = andarAtual+1;
+		}
+	}
+
+	// descer
+	public void descer() {
+		if ( andarAtual-1 > andarMinimo) {
+			andarAtual = andarAtual-1;
+		}
+	}
+
+	//retornarTudo
+	public String retornarTudo() {		
+		return
+				"andarAtual........: " + andarAtual + "\n" +
+				"andarMaximo...........: " + andarMaximo + "\n" +
+				"andarMinimo..............: " + andarMinimo + "\n" +
+				"capacidadePessoas.: " + capacidadePessoas + "\n" +
+				"qtdePessoas............: " + qtdePessoas + "\n" +
+				"nome...........: " + nome ;
+	}
+
+
+
+
+
+
+}  // fecha classe

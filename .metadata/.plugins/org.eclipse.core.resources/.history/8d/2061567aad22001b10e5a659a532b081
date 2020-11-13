@@ -1,0 +1,20 @@
+package variaveis;
+
+public class Tipos {
+
+	public static void main(String[] args) {
+		// <tipo de dado> <nome da variavel/objeto>
+		// string  (alfanumerico)
+		// int (numeros inteiros) e double (numeros reais) númerico
+		;
+		String nome = "Renato Glener";
+		int idade = 47;
+		double altura = 1.86;
+		System.out.println("Nome...: " + nome);
+		System.out.println("Idade..: " +idade);
+		System.out.println("Altura.: " +altura);
+		
+
+	}
+
+}

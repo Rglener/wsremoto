@@ -1,0 +1,27 @@
+package br.com.ecommerce.beans;
+
+public class Cliente {
+	
+	public String descricao;	
+	public float valorVenda;
+	public float valorCompra;
+	public int id;
+	public int qtde;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+
+}

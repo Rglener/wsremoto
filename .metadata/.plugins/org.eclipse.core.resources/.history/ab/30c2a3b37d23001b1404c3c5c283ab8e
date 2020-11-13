@@ -1,0 +1,17 @@
+package repeticao;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		/*
+		 * Pedir pro usuario: dia, mes e ano em variaveis separadas
+		 * ano => maior que 1900 e menor que 2002
+		 * mes => deve estar entre 1 e 12
+		 * dia => entre 1 e 31 dependendo do mês
+		 * No final pode exibir a data
+		 * 
+		 */
+
+	}
+
+}

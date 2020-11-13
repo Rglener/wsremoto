@@ -1,0 +1,37 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Notas {
+/*
+ * Solicitar um nome de aluno e duas notas, calcular a média 
+ * e exibir uma para para o aluno da seguinte forma:
+ * "Aluno xxxxxx, sua média obtida foi: xxxxxx para 10 faltam: xxxxxx pontos 
+ */
+	public static void main(String[] args) {
+		// Tipo de referência: quando o tipo se refere a uma classe
+		
+		
+				String nome = JOptionPane.showInputDialog("Digite o nome");
+				// Tipo primitivo de referência: quando o tipo já pertence a linguagem (comeca com letra minuscula)
+				// Tipo primitivo precisa de um apoio. Esse apoio vem das classes "Wrappers".
+				// int => Integer
+				// double => Double
+				// boolean => Boolean
+				
+				double nota1 = Double.parseDouble(JOptionPane.showInputDialog("Digite a primeira nota"));
+				double nota2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a segunda nota"));				
+			    double media = (nota1 + nota2) / 2;
+			    System.out.println("Aluno " +  nome + ",sua média obtida foi:" + media + " para 10 faltaram: " + (10-media) + "pontos");
+			    
+			    //double calculo = 10 - media;
+			    
+				//System.out.println("calculo ..: " + calculo);
+			    //System.out.printf("Aluno %s, sua média obtida foi: %.1f para 10 faltam : %.1f pontos",nome,media,calculo);
+				
+
+		
+
+	}  // fecho o metodo
+
+}     // fecha a classe     

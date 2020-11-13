@@ -1,0 +1,21 @@
+package br.com.formula1.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.formula1.modelo.Carro;
+
+public class TesteCarro {
+
+	public static void main(String[] args) {
+		//Instanciando um obejto  => criar as reparticoes do objeto
+		Carro objeto = new Carro();
+		objeto.preecherEscuderia(JOptionPane.showInputDialog("Escuderia"));
+		objeto.preencherNumero(Short.parseShort(JOptionPane.showInputDialog("Numero")));
+		System.out.println("Escuderia: " + objeto.retornarEscuderia());
+		System.out.println("Numero do carro: " + objeto.retornarNumero());
+		System.out.println("Status: " + objeto.ligar());
+		System.out.println("Status: " + objeto.desligar());
+
+	}
+
+}

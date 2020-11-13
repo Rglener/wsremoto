@@ -1,0 +1,26 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		/*
+		 * 1. Elabore uma aplicação que leia o valor de dois números inteiros e a operação aritmética desejada (+, -, * ou /); 
+           calcule, então, a resposta adequada.  
+           Se optar por uma divisão, leve em consideração que não podemos ter um número dividido por zero.
+           
+           2. Escreva um código que leia três valores inteiros e diferentes e mostre-os em ordem decrescente. 
+		 */
+		String operacao = JOptionPane.showInputDialog("Digite a operação desejada");
+		int valor1 = Integer.parseInt(JOptionPane.showInputDialog("Digite o primeiro numero"));
+		int valor2 = Integer.parseInt(JOptionPane.showInputDialog("Digite o segundo  numero"));
+		
+		if (operacao == "soma") {
+			float total = (valor1 + valor2);
+			System.out.println(total);
+			
+		}		
+	}
+
+}

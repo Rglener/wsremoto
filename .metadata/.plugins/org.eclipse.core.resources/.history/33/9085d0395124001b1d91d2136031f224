@@ -1,0 +1,77 @@
+package br.com.formula1.modelo;
+
+public class Carro {
+	
+	private String escuderia;
+	private short numero;
+	private String cor;
+	private float velocidadeAtual;
+	private float valor;
+	private boolean status;
+	
+	//Sintaxe do metódo no Java
+	// <modificador> <Tipo do Retorno> < nome do método> (<Tipo do Param> <nome do Param>) {
+	
+	
+	
+	public String retornarEscuderia() {
+		return escuderia;		
+	}
+	
+	public void preecherEscuderia(String param) {
+		escuderia=param.toUpperCase();
+	}
+	
+	public void preencherNumero(short param) {
+		numero=param;		
+	}
+	
+	public short retornarNumero() {
+		return numero;		
+	}
+	
+	public String ligar() {
+		status=true;
+		return "ligado";		
+	}
+	
+	public String desligar() {
+		status=false;
+		return "Desligado";		
+	}
+	
+	public void preencherValor(float param) {
+		valor = param;
+	}
+	
+	public float retornarPromocao() {
+		return valor * (float) 0.9;	
+	}
+		
+
+	public void preecherBasico(short param1, String param2, float param3) {
+         numero=param1;
+         escuderia=param2.toUpperCase();
+         valor=param3;
+	}
+			
+	
+		
+			
+	public String exibirTudo() {
+		String variavel = "LIGADO";
+		if (status==false) {
+			variavel="DESLIGADO";
+		
+		}	
+		return 
+				"Escuderia...........: " + escuderia + "\n" +
+				"Número..............: " + numero + "\n" +
+				"Cor................ : " + cor  + "\n" +
+				"Velocodade Atual....: " + velocidadeAtual + "\n" +
+				"valor...............: " + valor + "\n" +
+				"Staus...............: " + variavel;
+		}
+	
+
+}

@@ -1,0 +1,41 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		/*
+		 * 1º Parte
+		 * Jogador 1 : digita um numero inteiro
+		 * JOgador 2: tem que advinhar, eqto ele não acertar, a aplicação fica pedindo para ele digitar um numero
+		 * 
+		 * 2º Parte
+		 * Implemente dicas para o Jogador 2, informando se o numero que ele tem que advinhar é maior ou menor do que ele está digitando
+		 * 
+		 * 3º Parte
+		 * Exiba no final, a qtde de tentativas que foram utilizadas pelo jogador 2 até que ele advinhasse o número
+		 * Dica: terão que criar um variável pra contar!!
+		 */
+		int jogador1 = Integer.parseInt(JOptionPane.showInputDialog("numero1"));
+		int jogador2=0;	
+		do {		
+		jogador2 = Integer.parseInt(JOptionPane.showInputDialog("numero2"));
+		if (jogador1 == jogador2) {
+			System.out.println("Você acertou o numero");
+		}		   
+		
+	
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
